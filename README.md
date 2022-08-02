@@ -9,12 +9,11 @@ npm start
 When using ```@babel/plugin-transform-modules-commonjs``` (this is currently a core dependency in another project until some tech debt has been adressed)
 in the ```widget-js``` folder an error occurs
 
-````ReferenceError: exports is not defined
-    at ./node_modules/@microsoft/omnichannel-chat-widget/lib/cjs/index.js````
+````
+ReferenceError: exports is not defined at ./node_modules/@microsoft/omnichannel-chat-widget/lib/cjs/index.js
+````
 
-This is resolved by removing this 
-
-````"type": "module”,````
+This is resolved by removing this ```"type": "module”,```
 
 From package.json for omnichannel-chat-widget and the omnichannel-chat-component libraries
 
